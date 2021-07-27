@@ -1,0 +1,12 @@
+1627399276983:library(caret)
+1627399342478:data(iris)
+1627399351290:dataset <- iris
+1627399458016:# create a list of 80% of the rows in the original dataset we can use for training
+1627399458017:validation_index <- createDataPartition(dataset$Species, p=0.80, list=FALSE)
+1627399458062:# select 20% of the data for validation
+1627399458063:validation <- dataset[-validation_index,]
+1627399458066:# use the remaining 80% of data to training and testing the models
+1627399458067:dataset <- dataset[validation_index,]
+1627399471482:validation_index <- createDataPartition(dataset$Species, p=0.80, list=FALSE)
+1627399687888:install.packages("caret")
+1627399762523:validation_index <- createDataPartition(dataset$Species, p=0.80, list=FALSE)
