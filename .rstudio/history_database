@@ -10,3 +10,9 @@
 1627399471482:validation_index <- createDataPartition(dataset$Species, p=0.80, list=FALSE)
 1627399687888:install.packages("caret")
 1627399762523:validation_index <- createDataPartition(dataset$Species, p=0.80, list=FALSE)
+1627401010776:install.packages("caret")
+1627401129281:# use the remaining 80% of data to training and testing the models
+1627401129283:dataset <- dataset[validation_index,]
+1627401183340:source('~/MachineLearningApp.R')
+1627401233245:library(caret)
+1627401309879:install.packages("caret")
